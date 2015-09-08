@@ -1,0 +1,19 @@
+/*container|Links container*/
+.site_breadcrumbs {
+}
+
+/*item|Item*/
+.site_breadcrumbs a {
+}
+
+/*item:hover|Item mouse over*/
+.site_breadcrumbs a:hover {
+}
+
+/*item_active|Item active*/
+.site_breadcrumbs span {
+}
+
+/*first_item|Home item*/
+.site_breadcrumbs .first_item {
+}

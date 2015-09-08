@@ -1,0 +1,8 @@
+<tpl name="site_search_content">
+    <div id="site_search" class="app_site_search">
+        <div class="wrapper" id="wrapper">
+            <input type="text" id="inp_q" events="onenter=onSearchClick;onfocus=onInpFocus;onblur=onInpBlur"/>
+            <button id="btn_search" events="onclick=onSearchClick">Search</button>
+        </div>
+    </div>
+</tpl>

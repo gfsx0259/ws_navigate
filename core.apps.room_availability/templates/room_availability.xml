@@ -1,0 +1,22 @@
+<tpl name="room_availability">
+    <div id="msg"></div>
+    <div class="rooms" style="display: none" id="rooms">
+        <div class="rooms_dates" id="rooms_dates">
+            <div class="date_arrive">
+                <span id="date"></span>
+                <button class="calendar" id="btn_calendar" ></button>
+            </div>
+
+            <div class="nav_left">
+                 <a events="onclick=navigate" ofs="-7">&lt;&lt; 7 Days</a>
+            </div>
+
+            <div id="rooms_dates" class="dates_list"></div>
+
+            <div class="nav_right">
+                <a events="onclick=navigate" ofs="7">7 Days &gt;&gt;</a>
+            </div>
+        </div>
+        <div class="rooms_list" id="rooms_list"></div>
+    </div>
+</tpl>

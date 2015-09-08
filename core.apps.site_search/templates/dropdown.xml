@@ -1,0 +1,47 @@
+<tpl name="site_search_dropdown">
+    <div id="popup_wrapper" style="display: none">
+        <div class="site_search_dropdown" id="dropdown" >
+            <a class="hide" events="onclick=hideDropdown">close</a>
+
+            <div id="section_loading" style="display: none" class="msg">
+                Searching...
+            </div>
+
+            <div id="section_empty_results" style="display: none" class="msg">
+                Not found.
+            </div>        
+
+            <div id="section_all" style="display: none">
+                <div id="products" class="panel">
+                    <div class="header">Products</div>
+                    <div id="products_list" class="list"></div>
+                    <a class="more" id="lnk_more_products" panel="products" events="onclick=onMoreClick">more...</a>
+                </div>
+                <div id="brands" class="panel">
+                    <div class="header">Brands</div>
+                    <div id="brands_list" class="list"></div>
+                    <a class="more" id="lnk_more_brands" panel="brands" events="onclick=onMoreClick">more...</a>
+                </div>
+                <div id="categories" class="panel">
+                    <div class="header">Categories</div>
+                    <div id="categories_list" class="list"></div>
+                    <a class="more" id="lnk_more_categories" panel="categories" events="onclick=onMoreClick">more...</a>
+                </div>
+                <div id="pages" class="panel">
+                    <div class="header">Others</div>
+                    <div id="pages_list" class="list"></div>
+                    <a class="more" id="lnk_more_pages" panel="pages" events="onclick=onMoreClick">more...</a>
+                </div>
+            </div>
+
+            <div id="section_more" style="display: none">
+                <div class="panel">
+                    <div class="header" id="more_title">Products</div>
+                    <div id="pager"></div>
+                    <div id="more_list" class="list"></div>
+                    <a class="back" events="onclick=onBackClick">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</tpl>

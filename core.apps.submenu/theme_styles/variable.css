@@ -1,0 +1,39 @@
+/*ul|Submenu list*/
+ul.submenu {
+    border-bottom: 1px solid #CCCCCC;
+    list-style-type:none;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+/*li|Submenu list item*/
+.submenu li {
+    padding: 5px;
+    border-top:1px solid #CCCCCC;    
+}
+
+/*li.active|li.active*/
+.submenu li.active {
+    background: #CCCCCC;
+}
+
+/*a|Item link*/
+.submenu li a {
+    font-weight:bold;
+    text-decoration: none;
+}
+
+/*a:hover|Item link mouse over*/
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+/*span|Current page*/
+.submenu span {
+    font-weight: bold;
+}
+
+.menu_by-line {
+
+}

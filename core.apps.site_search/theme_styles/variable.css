@@ -1,0 +1,129 @@
+/*app_site_search|Search box*/
+.app_site_search {
+}
+
+/*app_site_search_wrapper|Search box inner*/
+.app_site_search .wrapper {
+height: 29px;
+width: 300px;
+background: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-box-shadow: 0 0 3px #aaa;
+-webkit-box-shadow: 0 0 3px #aaa;
+box-shadow: 0 0 3px #aaa;
+}
+
+/*input|Search query input*/
+.app_site_search input {
+border: 0;
+font-weight: bold;
+font-size: 16px;
+color: #000;
+outline: none;
+width: 270px;
+height: 20px;
+padding: 5px 4px 0 4px;
+}
+
+/*input_empty|Search query input empty*/
+.app_site_search input.empty {
+color: #ccc;
+}
+
+/*button|Submit button*/
+.app_site_search button {
+overflow: hidden;
+text-indent: 200px;
+border: 0;
+outline: none;
+background: transparent url(/themes/_dev/images/btn_search.png) no-repeat;
+width: 18px;
+height: 24px;
+cursor: pointer;
+}
+
+
+/*drop_down|Search results popup*/
+.site_search_dropdown {
+position: absolute;
+width: 300px;
+background: #fff;
+z-index: 600;
+border: 1px solid #333;
+padding-top: 16px;
+}
+
+
+/*drop_down_hide|Hide link*/
+.site_search_dropdown .hide {
+position: absolute;
+top: 2px;
+right: 4px;
+}
+
+/*drop_down_hide:hover|Hide link hover*/
+.site_search_dropdown .hide:hover {
+}
+
+/*drop_down_back|Back link*/
+.site_search_dropdown .back {
+position: absolute;
+bottom: 2px;
+right: 4px;
+}
+
+/*drop_down_back:hover|Back link hover*/
+.site_search_dropdown .back:hover {
+}
+
+/*drop_down_more|More link*/
+.site_search_dropdown .more {
+position: absolute;
+bottom: 0;
+right: 4px;
+}
+
+/*drop_down_more:hover|More link hover*/
+.site_search_dropdown .more:hover {
+}
+
+/*drop_down_header|Header*/
+.site_search_dropdown .header {
+text-transform: capitalize;
+padding: 4px 8px;
+background: #DDD;
+font-weight: bold;
+}
+
+/*drop_down_panel|Panel*/
+.site_search_dropdown .panel {
+position: relative;
+padding: 0;
+margin: 4px;
+}
+
+
+/*drop_down_list|Results list*/
+.site_search_dropdown .list {
+}
+
+
+/*drop_down_list_a|Results list item*/
+.site_search_dropdown .list a {
+display: block;
+margin: 2px 8px;
+width: 220px;
+height: 16px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+-moz-binding: url('/examples/text-overflow.xml#ellipsis');
+}
+
+/*drop_down_list_a:hover|Results list item hover*/
+.site_search_dropdown .list a:hover {
+}
