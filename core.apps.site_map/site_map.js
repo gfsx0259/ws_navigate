@@ -6,7 +6,7 @@ core.apps.site_map = function(args) {
     }
 
 
-}
+};
 
 
 core.apps.site_map.prototype = {
@@ -21,6 +21,6 @@ core.apps.site_map.prototype = {
         this.$["content"].innerHTML = html;
     }
 
-}
+};
 core.apps.site_map.extendPrototype(core.components.html_component);
 core.apps.site_map.extendPrototype(core.components.desktop_app);

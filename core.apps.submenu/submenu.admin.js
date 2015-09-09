@@ -35,7 +35,7 @@ core.apps.submenu.extendPrototype({
             { id: "root",
               title: "Root",
               childs: core.data.main_menu }
-        ]
+        ];
         this.renderNode(this.$["tree"], menu_tree);
         this.updateNodeClasses(core.data.main_menu);
         this.selectedItemId = null;

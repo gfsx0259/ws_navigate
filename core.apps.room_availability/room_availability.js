@@ -5,7 +5,7 @@ core.apps.room_availability = function(args) {
         motel_id: ""
     }
 
-}
+};
 
 
 core.apps.room_availability.prototype = {
@@ -481,11 +481,11 @@ core.apps.room_availability.prototype = {
         }
         this.blockUI();
         var p = {
-            dialog: "motels_proxy",
+            dialog: "room_availability",
             act: "get_rooms_availability",
             motel_id: this.profile["motel_id"],
             args: encodeURIComponent(core.transport.getEncodedData(args))
-        }
+        };
         core.transport.send("/controller.php", p, this.onServerResponce.bind(this));
     },
 
@@ -580,6 +580,6 @@ core.apps.room_availability.prototype = {
     }
 
 
-}
+};
 core.apps.room_availability.extendPrototype(core.components.html_component);
 core.apps.room_availability.extendPrototype(core.components.desktop_app);

@@ -7,7 +7,7 @@ core.apps.submenu = function(args) {
         layout: 0
     }
 
-}
+};
 
 
 core.apps.submenu.prototype = {
@@ -24,7 +24,7 @@ core.apps.submenu.prototype = {
             var res = {
                 title: "",
                 childs: core.data.main_menu 
-            }
+            };
             return res;
         }
 
@@ -42,6 +42,6 @@ core.apps.submenu.prototype = {
     }
 
 
-}
+};
 core.apps.submenu.extendPrototype(core.components.html_component);
 core.apps.submenu.extendPrototype(core.components.desktop_app);

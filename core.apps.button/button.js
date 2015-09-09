@@ -10,7 +10,7 @@ core.apps.button = function(args) {
         path_pressed:null,
         align: "center"
     }
-}
+};
 
 
 core.apps.button.prototype = {
@@ -93,6 +93,6 @@ core.apps.button.prototype = {
         }
      }
 
-}
+};
 core.apps.button.extendPrototype(core.components.html_component);
 core.apps.button.extendPrototype(core.components.desktop_app);

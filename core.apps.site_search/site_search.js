@@ -2,14 +2,14 @@ core.apps.site_search = function(args) {
 
     this.defaultProfile = {
         title: ""
-    }
+    };
 
 
     this.per_page = 20;
     this.first_result_count = 5;
     this.empty_q = "search...";
 
-}
+};
 
 
 core.apps.site_search.prototype = {
@@ -91,10 +91,10 @@ core.apps.site_search.prototype = {
         this.showSection("loading");
 
         var p = {
-            dialog: "search",
+            dialog: "site_search",
             q: this.q,
             layout_mode: core.data.layout_mode
-        }
+        };
         core.transport.send("/controller.php", p, this.onSearchAllResponse.bind(this));
     },
 
@@ -168,7 +168,7 @@ core.apps.site_search.prototype = {
         if(!p) p = {
             offset: 0,
             items_count: this.per_page
-        }
+        };
         p.target = this.search_target;
         p.dialog = "search";
         p.q = this.q;
@@ -217,7 +217,7 @@ core.apps.site_search.prototype = {
                 per_page: this.per_page,
                 parent: this.$["pager"],
                 callback: this.pagerCallback.bind(this)
-            }
+            };
             this.pager = new core.objects.pager(p);
         }
         this.pager.setData(this.data_more.offset, this.data_more.total);
@@ -228,7 +228,7 @@ core.apps.site_search.prototype = {
         var p = {
             offset: offset,
             items_count: this.per_page
-        }
+        };
         this.search(p);
     },
 
@@ -274,6 +274,6 @@ core.apps.site_search.prototype = {
         this.showElement("section_" + name);
     }
 
-}
+};
 core.apps.site_search.extendPrototype(core.components.html_component);
 core.apps.site_search.extendPrototype(core.components.desktop_app);

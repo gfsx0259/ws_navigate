@@ -1,42 +1,58 @@
 <?
 
-    $config["js_apps"]["core.apps.site_search"] = array(
+$config["js_apps"]["core.apps.site_search"] = array(
 
-        "content" => array(
-            USERTYPE_ADMIN => array(
-                "code" => array(
-                    "site_search.js"
-                ),
-                "templates" => array(
-                    "templates/content.xml",
-                    "templates/dropdown.xml"
-                )
+    'general' => array(
+        'title' => 'Site search',
+        'name' => 'site_search',//should be like 3th part of folder
+        'version' => '1.0.0',
+        'icon' => 'icon.png',
+        'category' => CATEGORY_NAVIGATE,
+        'description' => '',
+        'depends' => [
+            'ecommerce',
+            'ecommerce_product',
+            'ecommerce_category',
+            'ecommerce_brands_menu',
+            'layout_search_results'
+        ]
+    ),
+
+    "content" => array(
+        USERTYPE_ADMIN => array(
+            "code" => array(
+                "site_search.js"
             ),
+            "templates" => array(
+                "templates/content.xml",
+                "templates/dropdown.xml"
+            )
+        ),
 
 
-            USERTYPE_CONTRIBUTOR => array(
-                "code" => array(
-                    "site_search.js"
-                ),
-                "templates" => array(
-                    "templates/content.xml",
-                    "templates/dropdown.xml"
-                )
+        USERTYPE_CONTRIBUTOR => array(
+            "code" => array(
+                "site_search.js"
             ),
+            "templates" => array(
+                "templates/content.xml",
+                "templates/dropdown.xml"
+            )
+        ),
 
 
-            USERTYPE_GUEST => array(
-                "code" => array(
-                    "site_search.js"
-                ),
-                "templates" => array(
-                    "templates/content.xml",
-                    "templates/dropdown.xml"
-                )
+        USERTYPE_GUEST => array(
+            "code" => array(
+                "site_search.js"
+            ),
+            "templates" => array(
+                "templates/content.xml",
+                "templates/dropdown.xml"
             )
         )
-
     )
+
+)
 
 
 ?>
