@@ -9,11 +9,11 @@ $config["js_apps"]["core.apps.site_search"] = array(
         'category' => CATEGORY_NAVIGATE,
         'description' => '',
         'depends' => [
-            'ecommerce',
-            'ecommerce_product',
-            'ecommerce_category',
-            'ecommerce_brands_menu',
-            'layout_search_results'
+            'ecommerce/ecommerce',
+            'ecommerce/ecommerce_product',
+            'ecommerce/ecommerce_category',
+            'ecommerce/ecommerce_brands_menu',
+            'hidden/layout_search_results'
         ]
     ),
 
