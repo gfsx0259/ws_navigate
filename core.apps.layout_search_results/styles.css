@@ -1,0 +1,39 @@
+.search_results {
+    width: auto;
+    padding: 16px;
+}
+
+
+    .search_results .item {
+        padding: 0 0 12px 0;
+        text-align: justify;
+    }
+
+        .search_results .item .title {
+            margin-bottom: 4px;
+        }
+
+         
+            .search_results .item .title span,
+            .search_results .item .title a {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+        .search_results .item .summery {
+            margin: 0 0 4px 0;
+        }
+
+        .search_results .item strong {
+            font-weight: bold;
+            color: #000;
+        }
+
+
+    .search_results form {
+        width: auto;
+        display: block;
+        border: 1px solid #999;
+        margin: 0 0 24px 0;
+        padding: 16px;
+    }
