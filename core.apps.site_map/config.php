@@ -6,7 +6,6 @@ $config["js_apps"]["core.apps.site_map"] = array(
         'title' => 'Site map',
         'name' => 'site_map',//should be like 3th part of folder
         'version' => '1.0.0',
-        'icon' => 'icon.png',
         'category' => CATEGORY_NAVIGATE,
         'description' => '',
         'depends' => [
