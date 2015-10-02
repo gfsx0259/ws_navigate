@@ -13,7 +13,7 @@ $config["js_apps"]["core.apps.site_search"] = array(
             'ecommerce/ecommerce_product',
             'ecommerce/ecommerce_category',
             'ecommerce/ecommerce_brands_menu',
-            'hidden/layout_search_results'
+            'layout_search_results'
         ]
     ),
 
